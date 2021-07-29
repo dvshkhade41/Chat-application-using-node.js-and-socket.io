@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>InChat</title>
+        <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+        <script defer src="js/client.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="import" href="Chat app/chat.html">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />       
+    </head>
+    <body>
+        <nav>
+        	<img class="logo" src="chat app logo.png">
+        	<h1>Welcome to InChat</h1>
+        </nav>
+        <div class="chat-container">
+            <main class="chat-main">
+              <div class="chat-sidebar">
+                <h3><i class="fas fa-users"></i> Users</h3>
+                <ul id="use"></ul>
+              </div>
+                <div class="container">
+                	
+                </div>
+                <div class="send">
+                	<form action="#" id="send-container">
+                		<input type="text" name="mesageInp" id="messageInp">
+                		<button class="btn1" type="submit">Send</button>
+                	</form>
+                </div>
+            </main>
+        </div>     
+    </body>
+</html>
